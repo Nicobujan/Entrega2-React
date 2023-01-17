@@ -7,6 +7,9 @@
     margin: 0;
     background-color: #27292b;
 }
+h1{
+    color:#07E31F ;
+}
 
 .nav-menu{
     list-style: none;
@@ -15,3 +18,10 @@
     justify-content: center;
     gap: 2rem;
 }
+ .pageName{
+    font-size:25px;
+    color: #07E31F;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+ }

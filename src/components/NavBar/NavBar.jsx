@@ -1,22 +1,31 @@
 import CartWidget from "../CartWidget/CartWidget";
-import Logo from "../Logo/Logo";
 import NavItem from "../NavItem/NavItem";
-import "./navBar.css";
+import "./navbar.css";
+
+
+
+
 
 
 function NavBar() {
     return (
         <nav className="nav-header">
-       
-       <Logo titulo="Ecommerce"/>
+         <h2 className="pageName">EN LA ESQUINA </h2>
+                  
+        
         <ul className="nav-menu">
-          <NavItem categoria="Ofertas"/>
-          <NavItem categoria="Comprar"/>
-          <NavItem categoria="Vender"/>
-          <NavItem categoria="LogIn"/>
+          
+        <NavItem nombre="Bebidas sin Alcohol" category="/category/BebidasSinAlcohol"/>
+        <NavItem nombre="Bebidas Blancas" category="/category/BebidaBlanca"/>
+        <NavItem nombre="Bebidas Negras" category="/category/BebidasNegras"/>
+        <NavItem nombre="Cervezas" category="/category/Cervezas"/>
+        <NavItem nombre="Ofertas" category="/"/>
+          
           
           <CartWidget />
         </ul>
+        
+        
        
       </nav>
     )
